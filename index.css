@@ -1,0 +1,540 @@
+*{margin: 0;padding: 0;list-style: none;box-sizing: border-box;}
+a{text-decoration: none;}
+input{border: none;outline: none;}
+.auto{width: 78%;margin: auto;}
+body{background-color: #F5F5F5;}
+/* 定义商城主题颜色 */
+:root{
+    --color: #59dbc3;
+}
+nav{
+    height:50px;
+    background: #333;
+}
+.nav-txt{
+    height: 100%;
+    position: relative;
+}
+.nav-txt ul{
+    position: absolute;
+    right: 0;
+    display: flex;
+    height: 100%;
+    line-height: 50px; 
+}
+.nav-txt li:last-child a{
+    border: none;
+}
+.nav-txt ul li a{
+    padding: 0 15px;
+    color: #DCDCDC;
+    border-right: 2px solid #666666;
+}
+.nav-txt ul li a:hover{
+    color: var(--color);
+}
+.nav-txt ul li a i{
+    font-size: 21px;
+    margin-right: 2px;
+}
+header{
+    height: 130px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.head-nav{
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+.head-nav h1{
+    width: 17%;
+    height: 65%;
+    margin: -5px 12px 0 0;
+}
+.head-nav h1 a{
+    display: block;
+    width:100%;
+    height: 100%;
+    background: url(img/logo.0940ebb5.png) no-repeat;
+    background-size: 100% 100%;
+    font-size: 0;
+}
+.head-nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 59%;
+}
+.head-nav ul li:hover div{
+    width: 100%;
+}
+.head-nav ul li a{
+    display: block;
+    height: 100%;
+   color: black;
+   font-size: 17px;
+}
+.head-nav ul li div{
+    width: 0;
+    margin: auto;
+    height: 2px;
+    margin-top: 2px;
+    transition: all .3s;
+    background-color: var(--color);
+}
+.head-nav ul li:nth-child(n+2) a:hover{
+    color: var(--color);
+}
+.head-nav form{
+    width: 17%;
+    height: 25%;
+    margin: -5px 3px 0 15px;
+    position: relative;
+    transition: all .2s linear;
+    border-bottom: 2px solid rgba(236, 232, 232);
+}
+input[type=text]{
+    width: 82%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+input[type=submit]{
+    width: 18%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+}
+.head-nav form i{
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    font-size: 18px;
+    color: gainsboro;
+}
+.head-nav>i{
+    position: relative;
+    font-size: 27px;
+}
+.head-nav>i:hover{
+    color: var(--color);
+}
+.head-nav>i:hover::after{
+    color: black;
+}
+.head-nav>i::after{
+    content: '99';
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 19px;
+}
+.foot-top{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    background-color: white;
+}
+.foot-bottom{
+    height: 340px;
+    background-color: #333333;
+}
+.foot-top ul{
+    height: 70%;
+    display: flex;
+}
+.foot-top ul li{
+    width: 25%;
+    border-right: 1px solid #e7ecec;
+}
+.foot-top ul li:last-child{
+    border-right: none;
+}
+.li-div{
+    height: 100%;
+}
+.li-div>p{
+    font-size: 21px;
+    color: #9C9F9F;
+    text-align: center;
+}
+.flex{
+    height: 50%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.flex div{
+    width: 46%;
+    height: 100%;
+    color: #bfc0c0;
+    text-align: center;
+    border:1px solid #bfc0c0;
+}
+.flex div:hover,
+.flex div:hover p a{
+    color: var(--color);
+}
+.flex div p a{
+    color: #bfc0c0;
+}
+.flex div i{
+    display: block;
+    font-size: 30px;
+    margin: 15px 0 15px;
+}
+.div-er img{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+.li-div .div-er+div{
+    border: none;
+    padding: 8px 0;
+}
+.div-er+div p{
+    line-height: 1.5;
+}
+.flex button{
+    width: 100%;
+    height:38px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color .3s;
+    background-color: var(--color);
+}
+.flex button:hover{
+    color: var(--color);
+    background-color: transparent;
+    background-image: repeating-linear-gradient(-60deg, var(--color), var(--color) 0px, transparent 23px, transparent 23px, var(--color) 25px), 
+    repeating-linear-gradient(30deg,  var(--color), var(--color) 0px, transparent 23px, transparent 23px, var(--color) 25px), 
+    repeating-linear-gradient(120deg, var(--color), var(--color) 0px, transparent 23px, transparent 23px, var(--color) 25px), 
+    repeating-linear-gradient(210deg, var(--color), var(--color) 0px, transparent 23px, transparent 23px, var(--color) 25px);
+    background-size: 2px calc(100% + 50px), calc(100% + 50px) 2px, 2px calc(100% + 50px) , calc(100% + 50px) 2px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-repeat: no-repeat;
+    animation: borderAnimation .6s infinite linear;
+}
+@keyframes borderAnimation {
+    from { background-position: 0 0, -50px 0, 100% -50px, 0 100%; }
+    to { background-position: 0 -50px, 0 0, 100% 0, -50px 100%; }
+    }
+.flex div:hover p{
+    color: #bfc0c0;
+}
+.different{
+    width: 100%;
+    text-align: center;
+}
+.different p{
+    color: #bfc0c0;
+    line-height: 1.4;
+}
+.different p:nth-child(1){
+    font-size: 24px;
+    color: #666666;
+}
+.first{
+    height: 50%;
+    display: flex;
+    border-bottom: 1px solid #4a4e4e;
+}
+.buttom-li{
+    flex-grow: 1;
+    display: flex;
+    color: white;
+    font-size: 28px;
+    justify-content: center;
+    align-items: center;
+}
+.buttom-li i{
+    font-size: 30px;
+    margin-right: 13px;
+}
+.first+ul{
+    margin: 50px 0 20px;
+    display: flex;
+    justify-content: center;
+}
+.first+ul li a{
+    display: block;
+    padding: 0 13px;
+    color: #bfc0c0;
+    border-right: 1px solid #bfc0c0;
+}
+.first+ul li:last-child a{
+    border: none;
+}
+.foot-bottom>p{
+    text-align: center;
+    color: #bfc0c0;
+}
+main{
+    height: 500px;
+    position: relative;
+}
+#box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#box ul{
+    width: 500%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#box ul li{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+#box ul li a{
+    display: block;
+    height: 100%;
+}
+#box ul li a img{
+    width: 100%;
+    height: 100%;
+}
+#box>a{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    background: rgb(0,0,0,.3);
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    color: white;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: none;
+}
+#box-left{
+    left: 25%;
+    top: 50%;
+}
+#box-right{
+    right: 0;
+    top: 50%;
+}
+#box ol{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+#box ol li{
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--color);
+    border-radius: 50%;
+    margin: 0 5px;
+    float: left;
+    cursor: pointer;
+}
+.orange{
+    background-color: var(--color);
+}
+#box:hover>a{
+    display: block;
+}
+aside{
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0,.8);
+}
+.aside{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.aside li{
+    height: 10%;
+    color: rgb(209, 205, 205);
+    position: relative;
+    transition: all .2s;
+}
+.aside li:hover,
+.aside li:hover a{
+    color: white;
+    background-color: var(--color);
+}
+.aside li a{
+    color: rgb(211, 204, 204);
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 12px 30px;
+}
+.aside li a span{
+    font-size: 18px;
+}
+.aside li i{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+}
+section{
+    margin-bottom: 50px;
+    background-color: white;
+}
+section>div h1{
+    padding: 30px 0;
+    font-size: 28px;
+}
+section>div h1 span:first-child{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+    color: rgb(128, 120, 120);
+}
+section>div h1 span:last-child{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(128, 120, 120);
+    float: right;
+    cursor: pointer;
+}
+.list1{
+    width: 100%;
+    height: 400px; 
+    display: flex;
+    justify-content: space-between;
+}
+.list1 li{
+    width: 24%;
+    height: 100%;
+    transition: all .3s;
+    background-color: #F0F9F4;
+}
+.list1 li:hover{
+    transform: translate(0,-1px);
+    box-shadow: 2px 2px 8px 1px rgb(109, 102, 102);
+}
+.list1 li a{
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: block;
+}
+.list1 li a img{
+    width: 100%;
+    height: 75%;
+}
+.list1 li a p{
+    text-align: center;
+    line-height: 1.8;
+}
+.gname{
+    font-size: 25px;
+}
+.price{
+    color: red;
+}
+.number{
+    color: red;
+    font-size: 23px;
+}
+table{
+    width: 100%;
+}
+table tr{
+    width: 100%;
+}
+table tr td{
+    vertical-align: top;
+    width: 20%;
+    height: 300px;
+    transition: all .3s;
+    border: 1px solid transparent;
+}
+table tr td a{
+    display: block;
+    height: 100%;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+table tr td:hover{
+    border: 1px solid #27BB9A;
+}
+table tr td[rowspan='2']{
+    height: 100%;
+}
+table tr td[rowspan='2']:hover{
+    border: 1px solid transparent;
+}
+td[rowspan='2'] a img{
+    width: 100%;
+    height: 620px;
+    display: block;
+}
+td a img{
+    width: 100%;
+    height: 70%;
+}
+table tr td a p{
+    line-height: 1.5;
+}
+.hidd{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    transition: height .2s;
+    color: white;
+    text-align: center;
+    background-color: var(--color);
+}
+table tr td a:hover .hidd{
+    height: 30%;
+}
+.hidd p{
+    width: 60%;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 0 auto 8px;
+    border-bottom: 1px solid white;
+}
+.back{
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    width: 60px;
+    height:60px;
+    text-align: center;
+    line-height: 60px;
+    color: var(--color);
+    font-size: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    background-color: #ccd3d3;
+}
+form+i{
+    cursor: pointer;
+}

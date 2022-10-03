@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="ico/css/font-awesome.min.css">
+    <meta name="Description" content="此项目是我周末花了差不多两天做的一个静态购物网站，用来练手，进一步巩固前端基础"/>
+	<meta name="Keywords" content="购物 百货 商城 流行 包包 鞋子 衬衫"/>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小兔鲜儿购物商城</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-txt auto">
+            <ul>
+                <li><a href="javascript:;">请先登录</a></li>
+                <li><a href="javascript:;">免费注册</a></li>
+                <li><a href="javascript:;">我的订单</a></li>
+                <li><a href="javascript:;">会员中心</a></li>
+                <li><a href="javascript:;">帮助中心</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;"><i class="fa fa-mobile"></i>手机版</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 头部，粘滞定位 -->
+    <header>
+        <div class="head-nav auto">
+            <h1><a href="javascript:;">小兔鲜儿</a></h1>
+            <ul>
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">生鲜</a>
+                    <div></div>
+                </li>
+                <li><a href="javascript:;">美食</a>
+                    <div></div>
+                </li>
+                <li><a href="javascript:;">餐厨</a>
+                    <div></div>
+                </li>
+                <li><a href="javascript:;">电器</a>
+                    <div></div>
+                </li>
+                <li><a href="javascript:;">居家</a>
+                    <div></div>
+                </li>
+                <li><a href="javascript:;">洗护</a>
+                    <div></div>
+                </li>
+                <li><a href="javascript:;">孕婴</a>
+                    <div></div>
+                </li>
+                <li><a href="javascript:;">服装</a>
+                    <div></div>
+                </li>
+            </ul>
+            <form>
+                <input type="text" placeholder="搜点什么..." id="search"><input type="submit">
+                <i class="fa fa-search"></i>
+            </form>
+            <i class="fa fa-cart-plus"></i>
+        </div>
+    </header>
+    <!-- 中间 -->
+    <main class="auto">
+        <!-- 轮播 -->
+        <div id="box">
+            <a href="javascript:;" id="box-left">&lt;</a>
+            <a href="javascript:;" id="box-right">&gt;</a>
+            <!-- 图片区 -->
+            <ul>
+                <li><a href="javascrpt:;"><img src="img/goods1.jpg"></a></li>
+                <li><a href="javascrpt:;"><img src="img/goods2.jpg"></a></li>
+                <li><a href="javascrpt:;"><img src="img/goods3.jpg"></a></li>
+                <li><a href="javascrpt:;"><img src="img/goods4.jpg"></a></li>
+            </ul>
+            <!-- 小圆点，动态生成的-->
+            <ol></ol>
+        </div>
+        <!-- 侧边栏 -->
+        <aside>
+            <ul class="aside">
+                <li><a href="javascript:;"><span>生鲜</span> &nbsp;水果 蔬菜</a><i class="fa fa-angle-right"></i></li>    
+                <li><a href="javascript:;"><span>美食</span> &nbsp;面点 干果</a><i class="fa fa-angle-right"></i></a></li>
+                <li><a href="javascript:;"><span>餐厨</span> &nbsp;锅子 油烟机</a><i class="fa fa-angle-right"></i></a></li>
+                <li><a href="javascript:;"><span>电器</span> &nbsp;冰箱 吹风机</a><i class="fa fa-angle-right"></i></a></li>
+                <li><a href="javascript:;"><span>居家</span> &nbsp;奶粉 玩具 辅食</a><i class="fa fa-angle-right"></i></a></li>
+                <li><a href="javascript:;"><span>洗护</span> &nbsp;洗发 洗护 美妆</a><i class="fa fa-angle-right"></i></a></li>
+                <li><a href="javascript:;"><span>孕婴</span> &nbsp;奶粉 玩具</a><i class="fa fa-angle-right"></i></a></li>
+                <li><a href="javascript:;"><span>服饰</span> &nbsp;男装 女装</a><i class="fa fa-angle-right"></i></a></li>
+                <li><a href="javascript:;"><span>杂货</span> &nbsp;户外 图书</a><i class="fa fa-angle-right"></i></a></li>
+                <li><a href="javascript:;"><span>品牌</span> &nbsp;美的 戴尔</a><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+        </aside>
+    </main>
+    <!-- 商品展示 -->
+    <section>
+        <div class="auto">
+            <h1>新鲜好物<span>新鲜出炉 品质靠谱</span><span>查看全部 &gt;</span></h1>
+            <ul class="list1">
+                <li><a href="javascript:;">
+                        <img src="img/new_goods_1.jpg" alt="点击购买">
+                        <p class="gname">睿米无线吸尘器F8</p>
+                        <p><span class="price">￥</span><span class="number">1268.00</span></p>
+                    </a></li>
+                <li><a href="javascript:;">
+                        <img src="img/new_goods_2.jpg" alt="点击购买">
+                        <p class="gname">智能环绕3D空调</p>
+                        <p><span class="price">￥</span><span class="number">3268.00</span></p>
+                    </a></li>
+                <li><a href="javascript:;">
+                        <img src="img/new_goods_3.jpg" alt="点击购买">
+                        <p class="gname">广东糯米煲仔饭</p>
+                        <p><span class="price">￥</span><span class="number">28.00</span></p>
+                    </a></li>
+                <li><a href="javascript:;">
+                        <img src="img/new_goods_4.jpg" alt="点击购买">
+                        <p class="gname">罗西机械智能手表</p>
+                        <p><span class="price">￥</span><span class="number">4268.00</span></p>
+                    </a></li>
+            </ul>
+            <h1>鞋子包包<span>查看全部 &gt;</span></h1>
+            <table>
+                <tr>
+                    <td rowspan="2"><a href="javascript:;"><img src="img/clothes_goods_gird.jpg" alt="点击购买"></a></td>
+                    <td>
+                        <a href="javascript:;">
+                            <img src="img/clothes_goods_1.jpg" alt="点击购买">
+                            这是2021最新款球鞋,穿上不臭脚，快来挑选吧
+                            <p><span class="price">￥</span><span class="number">154.64</span></p>
+                            <div class="hidd">
+                                <p>找相似</p>
+                                发现更多宝贝
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="javascript:;">
+                            <img src="img/clothes_goods_2.jpg" alt="点击购买">
+                            女生皮带，各种色彩，彰显少女气质，总有一条适合你
+                            <p><span class="price">￥</span><span class="number">49.00</span></p>
+                            <div class="hidd">
+                                <p>找相似</p>
+                                发现更多宝贝
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="javascript:;">
+                            <img src="img/clothes_goods_3.jpg" alt="点击购买">
+                            女神版LV包包，手提包，送给心中最爱的她吧
+                            <p><span class="price">￥</span><span class="number">999.99</span></p>
+                            <div class="hidd">
+                                <p>找相似</p>
+                                发现更多宝贝
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="javascript:;">
+                            <img src="img/clothes_goods_4.jpg" alt="点击购买">
+                            女生裙子，上白下绿，完美的搭配适合完美的你
+                            <p><span class="price">￥</span><span class="number">188.00</span></p>
+                            <div class="hidd">
+                                <p>找相似</p>
+                                发现更多宝贝
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;">
+                            <img src="img/clothes_goods_5.jpg" alt="点击购买">
+                            男士衬衫，阳光大方，纯棉版，穿上不起球
+                            <p><span class="price">￥</span><span class="number">40.00</span></p>
+                            <div class="hidd">
+                                <p>找相似</p>
+                                发现更多宝贝
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="javascript:;">
+                            <img src="img/clothes_goods_6.jpg" alt="点击购买">
+                            体育生专用运动鞋，百米12秒5不是梦
+                            <p><span class="price">￥</span><span class="number">199.00</span></p>
+                            <div class="hidd">
+                                <p>找相似</p>
+                                发现更多宝贝
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="javascript:;">
+                            <img src="img/clothes_goods_7.jpg" alt="点击购买">
+                            黑色中老年人鞋，大小尺码都有，买回家送爸妈
+                            <p><span class="price">￥</span><span class="number">88.00</span></p>
+                            <div class="hidd">
+                                <p>找相似</p>
+                                发现更多宝贝
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="javascript:;">
+                            <img src="img/clothes_goods_8.jpg" alt="点击购买">
+                            猛男专用背心，衬托出满身肌肉，锻炼可用
+                            <p><span class="price">￥</span><span class="number">39.64</span></p>
+                            <div class="hidd">
+                                <p>找相似</p>
+                                发现更多宝贝
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <!-- 脚部 -->
+    <footer>
+        <div class="foot-top">
+            <ul class="auto">
+                <li>
+                    <div class="li-div auto">
+                        <p>客户服务</p>
+                        <div class="flex">
+                            <div>
+                                <i class="fa fa-commenting-o"></i>
+                                <p><a href="javascript:;">在线客服</a></p>
+                            </div>
+                            <div>
+                                <i class="fa fa-question-circle-o"></i>
+                                <p><a href="javascript:;">问题反馈</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-div auto">
+                        <p>关注我们</p>
+                        <div class="flex">
+                            <div>
+                                <i class="fa fa-comments-o"></i>
+                                <p><a href="javascript:;">公众号</a></p>
+                            </div>
+                            <div>
+                                <i class="fa fa-comment-o"></i>
+                                <p><a href="javascript:;">微博</a></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-div auto">
+                        <p>下载应用</p>
+                        <div class="flex">
+                            <div class="div-er">
+                                <img src="img/er.jpg" alt="二维码" title="扫描二维码">
+                            </div>
+                            <div>
+                                <p>扫描二维码</p>
+                                <p>立即下载APP</p>
+                                <button>下载页面</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-div auto">
+                        <p>服务热线</p><br /><br /><br />
+                        <div class="different">
+                            <p>400-0000-000</p>
+                            <p>周一至周日8:00-18:00</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="foot-bottom">
+            <ul class="auto first">
+                <li class="buttom-li">
+                    <i class="fa fa-dollar"></i>价格亲民
+                </li>
+                <li class="buttom-li">
+                    <i class="fa fa-ambulance"></i>物流快捷
+                </li>
+                <li class="buttom-li">
+                    <i class="fa fa-thumbs-o-up"></i>品质一流
+                </li>
+            </ul>
+            <ul>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">帮助中心</a></li>
+                <li><a href="javascript:;">售后服务</a></li>
+                <li><a href="javascript:;">配送与验收</a></li>
+                <li><a href="javascript:;">商务合作</a></li>
+                <li><a href="javascript:;">搜索推荐</a></li>
+                <li><a href="javascript:;">友情链接</a></li>
+            </ul>
+            <p>版权所有 © 小兔鲜儿</p>
+        </div>
+    </footer>
+    <!-- 返回顶部，固定定位 -->
+    <div class="back" title="冲上顶部">
+        <i class="fa fa-angle-double-up"></i>
+    </div>
+</body>
+
+</html>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+    $(function(){
+        $(window).scroll(function(){
+            var top=$(window).scrollTop();
+            if(top>800){
+                $('.back').fadeIn()
+            }else{
+                $('.back').fadeOut()
+            }
+        })
+        $('.back').click(function(){
+            $('body,html').animate({
+                scrollTop: 0
+            }, 300);
+        })
+    })
+    function animate(obj, target, callback) {
+        // console.log(callback);  callback = function() {}  调用的时候 callback()
+        // 先清除以前的定时器，只保留当前的一个定时器执行
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function () {
+            // 步长值写到定时器的里面
+            // 把我们步长值改为整数 不要出现小数的问题
+            var step = (target - obj.offsetLeft) / 10;
+            step = step > 0 ? Math.ceil(step) : Math.floor(step);
+            if (obj.offsetLeft == target) {
+                // 停止动画 本质是停止定时器
+                clearInterval(obj.timer);
+                // 回调函数写到定时器结束里面
+                if (callback) {
+                    // 调用函数
+                    callback();
+                }
+            }
+            // 把每次加 这个步长值改为一个慢慢变小的值  步长公式：(目标值 - 现在的位置) / 10
+            obj.style.left = obj.offsetLeft + step + 'px';
+        }, 15);
+    }
+    var form = document.querySelector('form');
+    var input = document.getElementById('search');
+    input.onfocus = function () {
+        form.style.borderBottom = '2px solid #29B69B';
+    }
+    input.onblur = function () {
+        form.style.borderBottom = '2px solid rgba(236, 232, 232, 0.959)';
+    }
+    var box = document.getElementById('box');
+    var ul = box.querySelector('ul');
+    var ol = box.querySelector('ol');
+    var mainWidth = box.offsetWidth;
+    for (var i = 0; i < ul.children.length; i++) {
+        var li = document.createElement('li');
+        ol.appendChild(li);
+        li.setAttribute('index', [i]);
+        li.onclick = function () {
+            for (var i = 0; i < ol.children.length; i++) {
+                ol.children[i].className = '';
+                this.className = 'orange';
+            }
+            var index = this.getAttribute('index');
+            num = index;
+            circle = index;
+            animate(ul, -index * mainWidth);
+        }
+    }
+    box.addEventListener('mouseenter', function () {
+        clearInterval(timer);
+        timer = null;
+    })
+    box.addEventListener('mouseleave', function () {
+        timer = setInterval(function () {
+            right.click();
+        }, 2500);
+    })
+    ol.children[0].className = 'orange';
+    var first = ul.children[0].cloneNode(true);
+    ul.appendChild(first);
+    var num = 0;
+    var right = document.getElementById('box-right');
+    var left = document.getElementById('box-left');
+    var circle = 0;
+    var flag = true;
+    right.onclick = function () {
+        if (flag) {
+            flag = false;
+            if (num == ul.children.length - 1) {
+                ul.style.left = 0;
+                num = 0;
+            }
+            num++;
+            animate(ul, -num * box.offsetWidth, function () {
+                flag = true;
+            });
+            circle++;
+            if (circle == ol.children.length) {
+                circle = 0;
+            }
+            circleChange();
+        }
+    }
+    left.onclick = function () {
+        if (flag) {
+            flag = false;
+            if (num == 0) {
+                num = ul.children.length - 1;
+                ul.style.left = -num * mainWidth + 'px';
+            }
+            num--;
+            animate(ul, -num * mainWidth, function () {
+                flag = true;
+            });
+            circle--;
+            if (circle < 0) {
+                circle = ol.children.length - 1;
+            }
+            circleChange();
+        }
+    }
+    function circleChange() {
+        for (var i = 0; i < ol.children.length; i++) {
+            ol.children[i].className = '';
+        }
+        ol.children[circle].className = 'orange';
+    }
+    var timer = setInterval(function () {
+        right.click();
+    }, 2500);
+</script>
